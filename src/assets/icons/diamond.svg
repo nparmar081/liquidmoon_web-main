@@ -1,0 +1,55 @@
+<svg
+  width="20px"
+  height="16px"
+  viewBox="0 0 20 16"
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+    <g
+    id="Page-1"
+    stroke="none"
+    stroke-width="1"
+    fill="none"
+    fill-rule="evenodd"
+  >
+        <g
+      id="COLLECTION"
+      transform="translate(-312.000000, -349.000000)"
+      fill-rule="nonzero"
+    >
+            <g id="diamond" transform="translate(312.000000, 349.000000)">
+                <polygon
+          id="Path"
+          fill="#00C3FF"
+          points="15.8620703 0 4.13792969 0 0 4.17392161 10 16 20 4.17392161"
+        />
+                <polygon
+          id="Path"
+          fill="#87DAFF"
+          points="15.8185132 0 9.89473684 16 20 4.17392161"
+        />
+                <polygon
+          id="Path"
+          fill="#00AAF0"
+          points="4.15024472 0 5.68421053 4.21052632 0 4.21052632"
+        />
+                <polygon
+          id="Path"
+          fill="#87DAFF"
+          points="10 0 5.68421053 4.21052632 14.3157895 4.21052632"
+        />
+                <polygon
+          id="Path"
+          fill="#A5E9FF"
+          points="14.3157895 4.21052632 20 4.21052632 15.8497553 0"
+        />
+                <polygon
+          id="Path"
+          fill="#0096DC"
+          points="0 4.21052632 5.727 4.21052632 10.1052632 16"
+        />
+            </g>
+        </g>
+    </g>
+</svg>

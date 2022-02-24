@@ -1,0 +1,42 @@
+name: Build
+
+concurrency: 
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
+on:
+  pull_request:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build project
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Make envfile
+        uses: SpicyPizza/create-envfile@v1
+        with:
+          envkey_VUE_APP_API_BASE_URL: 'http://47.119.197.247/a/r/api'
+          envkey_VUE_APP_POOL: '4wKiSZGZiSRzvLpRPykPrCeHEYYSWUK6Rm3SRcixneJo'
+          envkey_VUE_APP_ITEM_DATA_SIZE: '8 + 1 + 32 + 32 + 32 + 8 + 1 + 8;'
+          envkey_VUE_APP_TOKEN_METADATA_PROGRAM_ID: 'metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s'
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16.x'
+      
+      - name: Install dependencies
+        uses: borales/actions-yarn@v2.3.0
+        with:
+          cmd: install --ignore-engines
+
+      - name: Build
+        uses: borales/actions-yarn@v2.3.0
+        with:
+          cmd: build

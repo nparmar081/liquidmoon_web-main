@@ -1,0 +1,5 @@
+{
+    "bracketSameLine": true,
+    "proseWrap": "never",
+    "printWidth": 120
+}
